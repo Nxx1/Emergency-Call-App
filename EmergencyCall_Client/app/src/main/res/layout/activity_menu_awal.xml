@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuAwalActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:background="@drawable/background_register"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/informasi_card_nama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/proxima_nova_alt_bold"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:paddingTop="8dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="8dp"
+                    android:text="Emergency Call Kecamatan"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_height="1dp"
+                    android:background="@android:color/white"/>
+
+                <TextView
+                    android:id="@+id/informasi_card_penjelasan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/proxima_nova_alt_light"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:paddingTop="4dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="8dp"
+                    android:text="Siap siaga 24/7"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="14sp"
+            android:paddingTop="4dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="Panggilan Darurat"/>
+
+
+        <LinearLayout
+            android:layout_margin="8dp"
+            android:weightSum="4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/sos_ambulans"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:padding="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_margin="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:src="@drawable/ambulance"/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp"
+                        android:text="Ambulans"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/sos_polisi"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:padding="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_margin="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:src="@drawable/policebadge"/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp"
+                        android:text="Polisi"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/sos_pemadam"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:padding="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_margin="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:src="@drawable/firestation"/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp"
+                        android:text="Pemadam"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/sos_sar"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:padding="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_margin="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:src="@drawable/equipment"/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp"
+                        android:text="SAR"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="14sp"
+            android:paddingTop="4dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="Informasi terkini"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_informasi1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="128dp">
+
+                <ImageView
+
+                    android:id="@+id/informasi_card_img1"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/rescue"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/txt_penjelasan_informasi1"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:fontFamily="sans-serif"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="16dp"
+                    android:text="Nama Informasi"
+                    android:textColor="#330055"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_informasi2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="128dp">
+
+                <ImageView
+                    android:id="@+id/informasi_card_img2"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/rescue"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/txt_penjelasan_informasi2"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:fontFamily="sans-serif"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="16dp"
+                    android:text="Nama Informasi"
+                    android:textColor="#330055"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/informasi_card_img2" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="8dp"
+        android:gravity="center"
+        android:weightSum="5"
+        android:orientation="horizontal"
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/circlebuttonhome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <ImageButton
+            android:layout_weight="1"
+            android:id="@+id/home_btn_dashboard"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_baseline_home_24" />
+
+        <ImageButton
+            android:layout_weight="1"
+            android:id="@+id/home_btn_informasi"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_baseline_book_32" />
+
+        <ImageButton
+            android:layout_weight="1"
+            android:id="@+id/home_btn_sos"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_width="30dp"
+            android:layout_height="75dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/sosicon" />
+
+        <ImageButton
+            android:layout_weight="1"
+            android:id="@+id/home_btn_maps"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_baseline_map_32" />
+
+
+        <ImageButton
+            android:layout_weight="1"
+            android:id="@+id/home_btn_logout"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_baseline_logout_24" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

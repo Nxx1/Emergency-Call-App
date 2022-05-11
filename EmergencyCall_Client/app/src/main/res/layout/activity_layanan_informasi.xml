@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".LayananInformasi">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:gravity="center"
+            android:fontFamily="sans-serif"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Daftar Layanan Informasi"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+
+    <LinearLayout
+        android:paddingTop="8dp"
+        android:gravity="center"
+        android:weightSum="5"
+        android:orientation="horizontal"
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/circlebuttonhome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <ImageButton
+            android:layout_weight="1"
+            android:id="@+id/home_btn_dashboard"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_baseline_home_24" />
+
+        <ImageButton
+            android:layout_weight="1"
+            android:id="@+id/home_btn_informasi"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_baseline_book_32" />
+
+        <ImageButton
+            android:layout_weight="1"
+            android:id="@+id/home_btn_sos"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_width="30dp"
+            android:layout_height="75dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/sosicon" />
+
+        <ImageButton
+            android:layout_weight="1"
+            android:id="@+id/home_btn_maps"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_baseline_map_32" />
+
+
+        <ImageButton
+            android:layout_weight="1"
+            android:id="@+id/home_btn_logout"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_baseline_logout_24" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
